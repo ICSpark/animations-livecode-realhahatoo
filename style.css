@@ -5,10 +5,13 @@
 
 body {
     background-color: white;
+    animation-name: background;
+    animation-duration: 1s;
 }
 
 #description {
     font-style: italic;
+    transition: font-size 0.3s ease;
 }
 
 #pizza-list {
@@ -23,4 +26,20 @@ body {
 
 .pizza-img {
     width: 100px;
+}
+
+.pizza-img:hover {
+    filter: brightness(0.8);
+}
+
+.pizza-img:active {
+    opacity:0.8;
+}
+
+#descrpiption:hover {
+    font-size: 18px
+}
+@keyframes background {
+    from {background-color: black};
+    to {background-color: white;}
 }
